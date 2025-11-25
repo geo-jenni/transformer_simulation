@@ -44,8 +44,8 @@ if st.session_state.stage_index < len(logic_tree):
         })
 
         # Store feedback and advance stage
-        st.session_state.last_feedback = f"**{result}**  
-Score Change: {delta}"
+        st.session_state.last_feedback = f"**{result}**  \\nScore Change: {delta}"
+
         st.session_state.stage_index += 1
 
 # Show last feedback
