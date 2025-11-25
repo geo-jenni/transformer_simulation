@@ -44,8 +44,7 @@ if st.session_state.stage_index < len(logic_tree):
         })
 
         # Feedback
-        st.success(f"**{result}**  
-Score Change: {delta}")
+        st.success(f"**{result}**  \nScore Change: {delta}")
         st.session_state.stage_index += 1
         st.experimental_rerun()
 
