@@ -1,0 +1,192 @@
+[
+  {
+    "stage": 1,
+    "title": "PPE & Job Briefing",
+    "question": "What should the lineman do before starting work?",
+    "options": {
+      "Check PPE and review job plan": {
+        "result": "Correct",
+        "score": 10
+      },
+      "Climb pole directly": {
+        "result": "Unsafe: no job briefing done",
+        "score": -20
+      },
+      "Skip PPE if experienced": {
+        "result": "Critical Error: Always use PPE",
+        "score": -30
+      }
+    }
+  },
+  {
+    "stage": 2,
+    "title": "Hazard Identification",
+    "question": "What hazard should be addressed before setting up the bucket truck?",
+    "options": {
+      "Look for tree limbs or wires": {
+        "result": "Correct",
+        "score": 10
+      },
+      "Ignore surroundings": {
+        "result": "Unsafe: environmental risk",
+        "score": -20
+      },
+      "Start setup immediately": {
+        "result": "Warning: Hazard scan is mandatory",
+        "score": -10
+      }
+    }
+  },
+  {
+    "stage": 3,
+    "title": "System Isolation",
+    "question": "What\u2019s the correct first step before removing the transformer?",
+    "options": {
+      "Open the upstream disconnect and test voltage": {
+        "result": "Correct",
+        "score": 10
+      },
+      "Remove transformer wiring first": {
+        "result": "Critical Error: System may be live",
+        "score": -30
+      },
+      "Just assume it\u2019s off": {
+        "result": "Unsafe and incorrect",
+        "score": -20
+      }
+    }
+  },
+  {
+    "stage": 4,
+    "title": "Voltage Verification",
+    "question": "How should the lineman verify the line is de-energized?",
+    "options": {
+      "Use a hot stick voltage tester": {
+        "result": "Correct",
+        "score": 10
+      },
+      "Tap the wire with glove": {
+        "result": "Critical Error: Unsafe method",
+        "score": -30
+      },
+      "Assume disconnect is sufficient": {
+        "result": "Unsafe assumption",
+        "score": -20
+      }
+    }
+  },
+  {
+    "stage": 5,
+    "title": "Grounding Setup",
+    "question": "What is the next safety step after verifying the line is de-energized?",
+    "options": {
+      "Install ground jumpers": {
+        "result": "Correct",
+        "score": 10
+      },
+      "Skip grounding for speed": {
+        "result": "Unsafe: always ground",
+        "score": -30
+      },
+      "Proceed to transformer removal": {
+        "result": "Premature: safety step missed",
+        "score": -20
+      }
+    }
+  },
+  {
+    "stage": 6,
+    "title": "Disconnect Transformer",
+    "question": "What\u2019s the correct disconnection order?",
+    "options": {
+      "Neutral, then secondary, then primary": {
+        "result": "Correct",
+        "score": 10
+      },
+      "Primary first": {
+        "result": "Unsafe: arc hazard",
+        "score": -20
+      },
+      "Disconnect all at once": {
+        "result": "Unsafe procedure",
+        "score": -20
+      }
+    }
+  },
+  {
+    "stage": 7,
+    "title": "Remove Old Transformer",
+    "question": "How should the lineman safely remove the transformer?",
+    "options": {
+      "Use a hoist/crane while standing clear": {
+        "result": "Correct",
+        "score": 10
+      },
+      "Kick it loose manually": {
+        "result": "Critical Error: severe risk",
+        "score": -30
+      },
+      "Pull by hand from bucket": {
+        "result": "Unsafe and unbalanced",
+        "score": -20
+      }
+    }
+  },
+  {
+    "stage": 8,
+    "title": "Install New Transformer",
+    "question": "What\u2019s the correct approach for installing the replacement?",
+    "options": {
+      "Hoist and bolt securely before wiring": {
+        "result": "Correct",
+        "score": 10
+      },
+      "Wire it while hanging freely": {
+        "result": "Unsafe and unstable",
+        "score": -20
+      },
+      "Skip bolting to save time": {
+        "result": "Critical Error: insecure installation",
+        "score": -30
+      }
+    }
+  },
+  {
+    "stage": 9,
+    "title": "Reconnect & Test",
+    "question": "What\u2019s the correct order for reconnecting wires?",
+    "options": {
+      "Primary, then secondary, then neutral": {
+        "result": "Correct",
+        "score": 10
+      },
+      "Secondary before primary": {
+        "result": "Potential backfeed risk",
+        "score": -20
+      },
+      "Neutral last": {
+        "result": "Incorrect safety order",
+        "score": -10
+      }
+    }
+  },
+  {
+    "stage": 10,
+    "title": "Power-Up & Final Inspection",
+    "question": "What final steps must be done before leaving the site?",
+    "options": {
+      "Remove grounds, re-energize, inspect and document": {
+        "result": "Correct",
+        "score": 10
+      },
+      "Leave grounds in place": {
+        "result": "Unsafe post-job condition",
+        "score": -20
+      },
+      "Skip inspection to save time": {
+        "result": "Negligence risk",
+        "score": -30
+      }
+    }
+  }
+]
